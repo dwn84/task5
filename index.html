@@ -1,93 +1,92 @@
-<html><head>
+<html>
+
+<head>
     <meta charset="utf-8">
     <title>Actividad Grupal No. 2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="page-flip.css">
     <style>
-      html, body {
-        width: 100%;
-        height: 100%;
-      }
-
-      body {
-        overflow: hidden;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding: 0;
-        margin: 0;
-        background: #74ebd5;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      }
-
-      #container {
-        position: absolute;
-        top: 10%;
-        left: 25%;
-        width: 50%;
-      }
-
-      #magazine {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-      }
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0;
+            margin: 0;
+            background: #74ebd5;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #ACB6E5, #74ebd5);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        
+        #container {
+            position: absolute;
+            top: 10%;
+            left: 25%;
+            width: 50%;
+        }
+        
+        #magazine {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="container">
-      <div id="magazine">
-      <div id="page-flip">
-      <div class="pages-container">
-        <div class="hidden-left-page"></div>
-        <div class="left-brightness"></div>
-        <div class="prev-page"></div>
-        <div class="page-left disable-click">
-          <div class="page-grabber">
-            <div class="page-fold"></div>
-          </div>
-          <div class="page-middle"></div>
+        <div id="magazine">
+            <div id="page-flip">
+                <div class="pages-container">
+                    <div class="hidden-left-page"></div>
+                    <div class="left-brightness"></div>
+                    <div class="prev-page"></div>
+                    <div class="page-left disable-click">
+                        <div class="page-grabber">
+                            <div class="page-fold"></div>
+                        </div>
+                        <div class="page-middle"></div>
+                    </div>
+                    <div class="page-right" style="background-image: url(&quot;pages/page_001.jpg&quot;);">
+                        <div class="page-middle"></div>
+                        <div class="page-grabber">
+                            <div class="page-fold"></div>
+                        </div>
+                    </div>
+                    <div class="next-page"></div>
+                    <div class="right-brightness"></div>
+                    <div class="hidden-right-page"></div>
+                </div>
+            </div>
         </div>
-        <div class="page-right" style="background-image: url(&quot;pages/page_001.jpg&quot;);">
-          <div class="page-middle"></div>
-          <div class="page-grabber">
-            <div class="page-fold"></div>
-          </div>
-        </div>
-        <div class="next-page"></div>
-        <div class="right-brightness"></div>
-        <div class="hidden-right-page"></div>
-      </div>
-    </div>
-    </div>
     </div>
     <script src="page-flip.js"></script>
     <script>
-      new Pageflip('#magazine', [
-        'pages/page_001.png',
-        'pages/page_002.png',
-        'pages/page_003.png',
-        'pages/page_004.png',
-        'pages/page_005.png',
-        'pages/page_006.png',
-        'pages/page_007.png',
-        'pages/page_008.png',
-        'pages/page_009.png',
-        'pages/page_010.png',
-        'pages/page_011.png',
-        'pages/page_012.png',
-        'pages/page_013.png',
-        'pages/page_014.png',
-        'pages/page_015.png',
-        'pages/page_016.png',
-        'pages/page_017.png',
-        'pages/page_018.png',
-        'pages/page_019.png',
-        'pages/page_020.png'
-      ]);
+        new Pageflip('#magazine', [
+            'pages/page_001.png',
+            'pages/page_002.png',
+            'pages/page_003.png',
+            'pages/page_004.png',
+            'pages/page_005.png',
+            'pages/page_006.png',
+            'pages/page_007.png',
+            'pages/page_008.png',
+            'pages/page_009.png',
+            'pages/page_010.png',
+            'pages/page_011.png',
+            'pages/page_012.png'
+        ]);
     </script>
 
 </body>
